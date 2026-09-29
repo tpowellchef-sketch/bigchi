@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Big Chi Martial Arts &amp; Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#000000',
+                            dark: '#0a0a0a',
+                            card: '#121212',
+                            gray: '#1f1f1f',
+                            lightgray: '#888888',
+                            white: '#ffffff',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-black text-brand-white font-sans antialiased selection:bg-brand-white selection:text-brand-black">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-brand-black/90 backdrop-blur-md border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="images/logo.png" alt="Big Chi Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition-transform">
+                <span class="text-xl font-black tracking-wider uppercase">Big Chi</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-widest uppercase">
+                <a href="index.html" class="text-brand-lightgray hover:text-brand-white transition-colors">Home</a>
+                <a href="about.html" class="text-brand-white border-b-2 border-brand-white pb-1">About</a>
+                <a href="contact.html" class="text-brand-lightgray hover:text-brand-white transition-colors">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-brand-white focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-brand-gray px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-brand-lightgray hover:text-brand-white font-semibold uppercase tracking-wider">Home</a>
+            <a href="about.html" class="block py-2 text-brand-white font-semibold uppercase tracking-wider">About</a>
+            <a href="contact.html" class="block py-2 text-brand-lightgray hover:text-brand-white font-semibold uppercase tracking-wider">Contact</a>
+        </div>
+    </header>
+
+    <!-- About Hero Section (Inverted: White Background, No Logo) -->
+    <section class="relative py-20 sm:py-28 bg-brand-white text-brand-black border-b border-brand-gray overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="text-xs font-bold tracking-widest uppercase text-brand-gray block mb-4">Our Philosophy • Our Mission</span>
+            <h1 class="text-4xl sm:text-7xl font-black uppercase tracking-tight mb-6">About Big Chi</h1>
+            <p class="text-brand-gray max-w-2xl mx-auto text-lg sm:text-xl tracking-wide leading-relaxed">
+                Bridging physical combat disciplines with mental clarity, therapeutic mentorship, and holistic natural healing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission & Story -->
+    <section class="py-24 bg-brand-black border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-brand-lightgray block mb-2">The Foundation</span>
+                    <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight mb-6">Built on Resilience &amp; Inclusion</h2>
+                    <p class="text-brand-lightgray text-base leading-relaxed mb-6">
+                        At Big Chi Martial Arts, located right in the heart of Sheffield at <strong>2 Joiner St, S3 8GW</strong>, we believe true strength is forged from the inside out. Our approach combines rigorous combat training with deep psychological support and holistic wellness.
+                    </p>
+                    <p class="text-brand-lightgray text-base leading-relaxed mb-6">
+                        With extensive background training in MMA, boxing, and kickboxing, combined with professional qualifications in therapy, we specialize in supporting individuals from challenged backgrounds and neurodivergent communities. We provide a safe, disciplined space where everyone can unlock their full potential.
+                    </p>
+                    <div class="flex items-center space-x-4 pt-4 border-t border-brand-gray">
+                        <div>
+                            <p class="text-2xl font-black text-brand-white">Sheffield</p>
+                            <p class="text-xs uppercase tracking-widest text-brand-lightgray">Base of Operations</p>
+                        </div>
+                        <div class="border-l border-brand-gray pl-6">
+                            <p class="text-2xl font-black text-brand-white">Holistic</p>
+                            <p class="text-xs uppercase tracking-widest text-brand-lightgray">Mind &amp; Body Focus</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-card border border-brand-gray p-8 sm:p-12">
+                    <h3 class="text-2xl font-black uppercase tracking-wider mb-6">What We Stand For</h3>
+                    <ul class="space-y-6 text-brand-lightgray">
+                        <li class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-brand-black border border-brand-gray flex items-center justify-center text-brand-white shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <strong class="text-brand-white block uppercase tracking-wide text-sm mb-1">Elite Striking &amp; Fitness</strong>
+                                <p class="text-sm">Technical boxing, kickboxing, and MMA training designed to build real physical confidence and stamina.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-brand-black border border-brand-gray flex items-center justify-center text-brand-white shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <strong class="text-brand-white block uppercase tracking-wide text-sm mb-1">Therapeutic Coaching</strong>
+                                <p class="text-sm">Compassionate, professional mentoring tailored to neurodivergent individuals and those seeking positive life changes.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-brand-black border border-brand-gray flex items-center justify-center text-brand-white shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <strong class="text-brand-white block uppercase tracking-wide text-sm mb-1">Natural Herbal Remedies</strong>
+                                <p class="text-sm">Enhance recovery with our signature products, including our 5-blend mushroom tea and nutrient-dense mushroom gummies.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-20 bg-brand-dark border-t border-brand-gray text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-6">Ready to Start Your Journey?</h2>
+            <p class="text-brand-lightgray max-w-2xl mx-auto mb-8 whitespace-nowrap overflow-x-auto">
+                Reach out today at <strong class="text-brand-white">07759802072</strong> or visit us at <strong class="text-brand-white">2 Joiner St, Sheffield S3 8GW</strong>.
+            </p>
+            <a href="contact.html" class="inline-block bg-brand-white text-brand-black font-bold uppercase tracking-widest px-8 py-4 hover:bg-brand-lightgray transition-colors">
+                Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black border-t border-brand-gray py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-lightgray uppercase tracking-widest">
+            <p>&copy; 2026 Big Chi Martial Arts. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-brand-white transition-colors">Home</a>
+                <a href="about.html" class="hover:text-brand-white transition-colors">About</a>
+                <a href="contact.html" class="hover:text-brand-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

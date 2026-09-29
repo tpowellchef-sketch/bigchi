@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Big Chi Martial Arts &amp; Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#000000',
+                            dark: '#0a0a0a',
+                            card: '#121212',
+                            gray: '#1f1f1f',
+                            lightgray: '#888888',
+                            white: '#ffffff',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-black text-brand-white font-sans antialiased selection:bg-brand-white selection:text-brand-black">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-brand-black/90 backdrop-blur-md border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="images/logo.png" alt="Big Chi Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition-transform">
+                <span class="text-xl font-black tracking-wider uppercase">Big Chi</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-widest uppercase">
+                <a href="index.html" class="text-brand-lightgray hover:text-brand-white transition-colors">Home</a>
+                <a href="about.html" class="text-brand-lightgray hover:text-brand-white transition-colors">About</a>
+                <a href="contact.html" class="text-brand-white border-b-2 border-brand-white pb-1">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-brand-white focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-brand-gray px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block py-2 text-brand-lightgray hover:text-brand-white font-semibold uppercase tracking-wider">Home</a>
+            <a href="about.html" class="block py-2 text-brand-lightgray hover:text-brand-white font-semibold uppercase tracking-wider">About</a>
+            <a href="contact.html" class="block py-2 text-brand-white font-semibold uppercase tracking-wider">Contact</a>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section (Inverted: White Background, No Logo) -->
+    <section class="relative py-20 sm:py-28 bg-brand-white text-brand-black border-b border-brand-gray overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="text-xs font-bold tracking-widest uppercase text-brand-gray block mb-4">Get In Touch • Train &amp; Transform</span>
+            <h1 class="text-4xl sm:text-7xl font-black uppercase tracking-tight mb-6">Contact Us</h1>
+            <p class="text-brand-gray max-w-2xl mx-auto text-lg sm:text-xl tracking-wide leading-relaxed">
+                Reach out today to start your training, ask about our herbal remedies, or book a therapeutic session.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form Section -->
+    <section class="py-24 bg-brand-black border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info Column -->
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest uppercase text-brand-lightgray block mb-2">Direct Connection</span>
+                        <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-6">We're Here to Help</h2>
+                        <p class="text-brand-lightgray text-base leading-relaxed mb-8">
+                            Whether you're looking to step onto the mat, inquire about our 5-blend mushroom tea and wellness gummies, or access dedicated support coaching, drop us a line or visit our Sheffield location.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4 bg-brand-card border border-brand-gray p-6">
+                                <div class="w-12 h-12 bg-brand-black border border-brand-gray flex items-center justify-center text-brand-white shrink-0 text-xl">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-bold uppercase tracking-widest text-brand-lightgray mb-1">Phone</h3>
+                                    <a href="tel:07759802072" class="text-lg font-black text-brand-white hover:text-brand-lightgray transition-colors">07759802072</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4 bg-brand-card border border-brand-gray p-6">
+                                <div class="w-12 h-12 bg-brand-black border border-brand-gray flex items-center justify-center text-brand-white shrink-0 text-xl">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-bold uppercase tracking-widest text-brand-lightgray mb-1">Location</h3>
+                                    <p class="text-lg font-black text-brand-white">2 Joiner St, Sheffield S3 8GW</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="bg-brand-card border border-brand-gray p-8 sm:p-10">
+                    <h3 class="text-2xl font-black uppercase tracking-wider mb-6">Send a Message</h3>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-xs font-bold uppercase tracking-widest text-brand-lightgray mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-brand-black border border-brand-gray px-4 py-3 text-brand-white text-sm focus:outline-none focus:border-brand-white transition-colors">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-xs font-bold uppercase tracking-widest text-brand-lightgray mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full bg-brand-black border border-brand-gray px-4 py-3 text-brand-white text-sm focus:outline-none focus:border-brand-white transition-colors">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-xs font-bold uppercase tracking-widest text-brand-lightgray mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-brand-black border border-brand-gray px-4 py-3 text-brand-white text-sm focus:outline-none focus:border-brand-white transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-white text-brand-black font-bold uppercase tracking-widest py-4 hover:bg-brand-lightgray transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-20 bg-brand-dark border-t border-brand-gray text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-6">Take the First Step</h2>
+            <p class="text-brand-lightgray max-w-2xl mx-auto mb-8 whitespace-nowrap overflow-x-auto">
+                Reach out today at <strong class="text-brand-white">07759802072</strong> or visit us at <strong class="text-brand-white">2 Joiner St, Sheffield S3 8GW</strong>.
+            </p>
+            <a href="tel:07759802072" class="inline-block bg-brand-white text-brand-black font-bold uppercase tracking-widest px-8 py-4 hover:bg-brand-lightgray transition-colors">
+                Call Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black border-t border-brand-gray py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-lightgray uppercase tracking-widest">
+            <p>&copy; 2026 Big Chi Martial Arts. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="index.html" class="hover:text-brand-white transition-colors">Home</a>
+                <a href="about.html" class="hover:text-brand-white transition-colors">About</a>
+                <a href="contact.html" class="hover:text-brand-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
